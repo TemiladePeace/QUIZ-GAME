@@ -28,11 +28,11 @@
                         optn2.innerHTML=this.questions[this.index].options[1];
                         optn3.innerHTML=this.questions[this.index].options[2];
                         optn4.innerHTML=this.questions[this.index].options[3];
-                           this.scoreCard();
+                           // this.scoreCard();
                         }
                         else{
 
-                        quizGame.innerHTML="QUIZ IS OVER! PLEASE TRY AGAIN LATER!"      
+                        quizGame.innerHTML="QUIZ IS OVER!!!"      
                         optn1.style.display="none";
                         optn2.style.display="none";
                         optn3.style.display="none";
@@ -52,11 +52,13 @@
                          	this.score++;
                          	ele.className="correct";
                          	ele.innerHTML="Correct";
-                         	this.scoreCard();
+                            this.scoreCard();
+                            
                          }
                          else{
                          	ele.className="wrong";
                             ele.innerHTML="Wrong";
+                            this.scoreCard();
                             
                          }
                 },
