@@ -28,7 +28,6 @@
                         optn2.innerHTML=this.questions[this.index].options[1];
                         optn3.innerHTML=this.questions[this.index].options[2];
                         optn4.innerHTML=this.questions[this.index].options[3];
-                           // this.scoreCard();
                         }
                         else{
 
@@ -38,6 +37,7 @@
                         optn3.style.display="none";
                         optn4.style.display="none";
                         btn.style.display="none";
+                        this.scoreCard();
                         }
                 },
                  next:function(){
@@ -51,14 +51,10 @@
                          if(id[id.length-1]==this.questions[this.index].answer){
                          	this.score++;
                          	ele.className="correct";
-                         	ele.innerHTML="Correct";
-                            this.scoreCard();
                             
                          }
                          else{
                          	ele.className="wrong";
-                            ele.innerHTML="Wrong";
-                            this.scoreCard();
                             
                          }
                 },
